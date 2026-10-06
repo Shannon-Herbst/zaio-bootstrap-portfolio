@@ -40,40 +40,36 @@
 
   <body class="bg-dark">
 
-      <header class="p-5 text-white fixed-top">
-        <div>
-          <h3 class="float-md-start text-center">Portfolio</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
+      <header class="site-header px-3 py-3 px-md-5 text-white fixed-top">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between gap-2">
+          <h3 class="m-0 text-center">Portfolio</h3>
+          <nav class="nav nav-masthead">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#about-us">About me</a>
             <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
         
-    <div class="banner-wrap vh-100 d-flex align-items-center justify-content-center text-white">
+    <div class="banner-wrap d-flex align-items-center justify-content-center text-white">
       <div class="overlay"></div>
       <main class="text-center">
-        <h1 class="display-1">I am Shannon Herbst</h1>
+        <h1 class="hero-title">I am Shannon Herbst</h1>
         <h2>Web Developer</h2>
         <span class="lead" id="typed"></span>
       </main>
     </div>
 
     <section id="about-us">
-         <div class="container p-5">
+         <div class="container p-3 p-md-5">
             <div class="card">
              <div class="card-body">
-                 <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                      <div class="row">
-                          
+                 <div class="row g-4">
                           <div class="col-md-6" id="left-collum">
                               <img src="/assets/img1.jpg" alt="profile photo" id="profile-image">
                               <p><strong>Name:</strong> Shannon Herbst</p>
                               <p><strong>Profile:</strong> Full Stack Developer</p>
-                              <p><strong>Email:</strong> Shan@gmail.com</p>
+                              <p><strong>Email:</strong> herbstdevelopment@gmail.com</p>
                               <p><strong>Skills:</strong> 
                                 <span class="badge rounded-pill bg-secondary">HTML</span>
                                 <span class="badge rounded-pill bg-secondary">CSS</span>
@@ -86,13 +82,13 @@
                                 <span class="badge rounded-pill bg-secondary">NodeJS</span>
                                 <span class="badge rounded-pill bg-secondary">MongoDB</span>
                                 <span class="badge rounded-pill bg-secondary">Express</span>
+                                <span class="badge rounded-pill bg-secondary">Claude</span>
+                                <span class="badge rounded-pill bg-secondary">Cursor</span>
                               </p>
                           </div>
-                      </div>
-                  </div>
                   <div class="col-md-6">
                       <h1 class="text-center text-md-start"><mark>About me</mark></h1>
-                      <p class="lead">Web developer with a certificate of higher education in computer engineering as well as a bootcamp in web development polishing both theoritical and practical knowledge.</p>
+                      <p class="lead">I studied computing and electronic engineering at university, this gave me a strong base in problem solving. I have also completed a full stack web development bootcamp at the ZAIO Institute, where I learned practical skills including the MERN stack and how to use AI tools such as Claude and Cursor.</p>
                   </div>
                  </div>
              </div>
@@ -101,43 +97,47 @@
     </section>
 
     <section id="projects">
-      <div class="container p-5">
+      <div class="container p-3 p-md-5">
         <h1 class="text-center"><mark>Projects</mark></h1>
         <div class="row">
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
-                src="/assets/img-3.png"
+                src="/assets/airbnb-capstone.png"
                 class="card-img-top"
-                alt="..."
+                alt="Airbnb clone homepage"
               />
               <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://lambent-nougat-7007b1.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
-                <a href="https://github.com/Scrapion18/zaio-netflix-clone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title">Airbnb Clone</h5>
+                <p class="card-text">Full MERN stack clone of Airbnb</p>
+                <div class="card-actions">
+                <a href="https://capstone-frontend-jh87.onrender.com/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Shannon-Herbst/capstone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
-                src="/assets/img-2.png"
+                src="/assets/tic-tac-toe.png"
                 class="card-img-top"
-                alt="..."
+                alt="Tic Tac Toe game"
               />
               <div class="card-body">
-                <h5 class="card-title">Tesla Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://tesla-landing-page-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
-                <a href="https://github.com/Shannon-Herbst/ecars/tree/main/assignment" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title">Tic Tac Toe</h5>
+                <p class="card-text">Built this with React</p>
+                <div class="card-actions">
+                <a href="https://tictactoeshan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Shannon-Herbst/tic-tac-toe-react" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
                 src="/assets/img-4.png"
                 class="card-img-top"
@@ -146,14 +146,16 @@
               <div class="card-body">
                 <h5 class="card-title">Youtube Clone</h5>
                 <p class="card-text">Built this with HTML & CSS</p>
+                <div class="card-actions">
                 <a href="https://youtube-clone-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
                 <a href="https://github.com/Shannon-Herbst/youtube-assignment" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
                 src="/assets/imh-5.png"
                 class="card-img-top"
@@ -162,30 +164,34 @@
               <div class="card-body">
                 <h5 class="card-title">Google Keep Clone</h5>
                 <p class="card-text">Built this with HTML & CSS</p>
+                <div class="card-actions">
                 <a href="https://zaio-google-keep-clone-shan.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
                 <a href="https://github.com/Scrapion18/zaio-netflix-clone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
-                src="/assets/img-6.png"
+                src="/assets/twitter-clone.png"
                 class="card-img-top"
-                alt="..."
+                alt="Twitter clone homepage"
               />
               <div class="card-body">
-                <h5 class="card-title">E-Cars Sales Landing Page</h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://shannon-ecars.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
-                <a href="https://shannon-ecars.netlify.app/" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                <h5 class="card-title">Twitter Clone</h5>
+                <p class="card-text">Built this with HTML, CSS & JavaScript</p>
+                <div class="card-actions">
+                <a href="https://whimsical-syrniki-c9101b.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
+                <a href="https://github.com/Shannon-Herbst/twitter-assignment" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
+          <div class="col-12 col-md-6 col-xl-4 mt-3 d-flex">
+            <div class="card project-card h-100">
               <img
                 src="/assets/img-3.png"
                 class="card-img-top"
@@ -194,8 +200,10 @@
               <div class="card-body">
                 <h5 class="card-title">Netflix Landing Page</h5>
                 <p class="card-text">Built this with HTML & CSS</p>
+                <div class="card-actions">
                 <a href="https://lambent-nougat-7007b1.netlify.app/" class="btn btn-primary" target="_blank">View Website</a>
                 <a href="https://github.com/Scrapion18/zaio-netflix-clone" class="btn btn-outline-dark" target="_blank"><i class="bi bi-code-slash"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -204,56 +212,6 @@
       </div>
     </section>
     
-    <section id="contact">
-      <div class="container p-5">
-        <div class="card p-3">
-          <div class="card-body px-5 text-center">
-           <h1><mark>Let's Connect</mark></h1>
-           <p class="lead">Would love to connect with fellow developers and employers looking for developers.</p>
-           <a class="fs-2" href="#" target="_blank"><i class="bi bi-github m-2"></i></a>
-           <a class="fs-2" href="#" target="_blank"><i class="bi bi-instagram m-2"></i></a>
-           <a class="fs-2" href="#" target="_blank"><i class="bi bi-linkedin m-2"></i></a>
-           <form>
-
-              <div class="mb-3">              
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter Email Address"
-                />
-              </div>
-
-              <div class="mb-3">    
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Enter Name"
-                />
-              </div>
-
-              <div class="mb-3">    
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Enter Subject"
-                />
-              </div>
-
-              <div class="mb-3">
-                  <textarea class="form-control" aria-label="with textarea" placeholder="Enter Message"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="bg-dark text-center text-white">
         <div class="container p-3">
             <p>Developed by Shannon Herbst using Bootstrap</p>
